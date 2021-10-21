@@ -151,12 +151,30 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 40vh;
+  height: 60vh;
 }
 
 .hero-text {
   text-align: center;
   margin-top: 80px;
+}
+
+#portfolio {
+  text-align: center;
+}
+
+#portfolio ul {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+
+#portfolio ul li {
+  grid-column: 1 / 13;
+}
+
+#portfolio img {
+  width: 100%;
 }
 
 /* SMALL TABLET STYLES */
