@@ -1,0 +1,154 @@
+/* VARIABLES */
+
+:root {
+  --primary: #00d6b4;
+}
+
+/* RESET */
+
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* BASE STYLES */
+
+body {
+  background: #222;
+  font-family: "Lato";
+}
+
+.button {
+  background: none;
+  border: 1px solid var(--primary);
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: var(--primary);
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  background: var(--primary);
+  color: #000;
+}
+
+input,
+textarea {
+  background: #4b4b4b;
+  padding: 10px;
+  color: #fff;
+  resize: none;
+  outline: none;
+  border: 1px solid var(--primary);
+  display: block;
+  border-radius: 4px;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Lato";
+  src: url("font/Lato-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("font/Lato-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("font/Lato-Regular.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("font/Lato-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("font/Lato-Black.ttf");
+  font-weight: 900;
+}
+
+h1 {
+  font-weight: 900;
+  color: #fff;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.6em;
+}
+
+h3 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 2.2em;
+}
+
+p {
+  font-weight: 300;
+  color: #fff;
+  font-size: 1em;
+}
+
+a,
+li {
+  color: #999;
+  transition: all 0.5s ease;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+a:active {
+  font-weight: 700;
+}
+
+label {
+  color: #fff;
+}
+/* MOBILE STYLES */
+
+/* SMALL TABLET STYLES */
+
+@media screen and (min-width: 620px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* TABLET & LAPTOP STYLES */
+
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
