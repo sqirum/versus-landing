@@ -129,6 +129,10 @@ label {
 }
 /* MOBILE STYLES */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -200,6 +204,7 @@ nav {
   grid-column: 2/12;
   text-align: center;
   margin: 20px 0;
+  line-height: 1.5em;
 }
 
 #contact h2 {
@@ -235,6 +240,7 @@ footer h2 {
 footer p {
   grid-column: 8/12;
   align-self: center;
+  text-align: end;
 }
 
 /* SMALL TABLET STYLES */
@@ -257,6 +263,10 @@ footer p {
     margin: 40px 0;
   }
 
+  #about p {
+    line-height: 1.5em;
+  }
+
   #about img {
     margin: 20px auto;
   }
@@ -268,42 +278,58 @@ footer p {
   #contact h2 {
     margin-bottom: 40px;
   }
-
-  
-
-/* TABLET & LAPTOP STYLES */
-
-@media screen and (min-width: 960px) {
-  body {
-    font-size: 18px;
+  #contact form {
+    width: 80%;
   }
 
-#portfolio ul {
-  grid-gap: 10px;
-}
+  /* TABLET & LAPTOP STYLES */
 
-  #portfolio ul li {
-    grid-column: span 4;
-    margin: 0;
-  }
-}
+  @media screen and (min-width: 960px) {
+    body {
+      font-size: 18px;
+    }
 
-/* DESKTOP STYLES */
+    #portfolio ul {
+      grid-gap: 10px;
+    }
 
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 20px;
-  }
-  header {
-    padding: 50px 0;
+    #portfolio ul li {
+      grid-column: span 4;
+      margin: 0;
+    }
+    #about p {
+      line-height: 1.5em;
+    }
+    footer p {
+      grid-column: 8/12;
+    }
+    #contact form {
+      width: 70%;
+    }
   }
 
-  #about img {
-    width: 10%;
-  }
-  #about p{
-    max-width: 70%;
-    margin: 10px 15%;
-    line-height: 1.5em;
+  /* DESKTOP STYLES */
+
+  @media screen and (min-width: 1200px) {
+    body {
+      font-size: 20px;
+    }
+    header {
+      padding: 50px 0;
+    }
+    .hero-text {
+      margin-top: 40px;
+    }
+    #about img {
+      width: 10%;
+    }
+    #about p {
+      max-width: 70%;
+      margin: 10px 15%;
+      line-height: 1.5em;
+    }
+    #contact form {
+      width: 40%;
+    }
   }
 }
